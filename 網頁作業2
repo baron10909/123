@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<td><a href='http://www.w3schools.com/html/default.asp'><img src="http://s105.youtaker.com/other/2014/9-29/oth399610859c7625ecc53d466b8306086bde0f9c720010.jpg" alt="dog" width="130" height="120"></a></td>
+
+</body>
+</html>
