@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>網頁作業</title>
+</head>
+<body background="DgDJqTfVAAEuEgP.jpg" text="skyblue">
+<table border="2" bordercolor="brown">
+
+<tr>
+　<td colspan="2"><font size='6' color='#0000FF' face='超研澤疊圓體'>寵物</fon</td>
+<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>興趣</fon</td>
+<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>品種</fon</td>
+<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>專長</fon</td>
+</tr>
+ <tr></tr>
+ <tr>
+　<td><a href='http://www.w3schools.com/html/default.asp'><img src="http://s105.youtaker.com/other/2014/9-29/oth399610859c7625ecc53d466b8306086bde0f9c720010.jpg" alt="dog" width="120" height="120"></a></td>
+  　<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>吃東西</fon</td>
+　　<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>博美</fon</td>
+ 　<td colspan="2"><font size='6' color='#008000' face='超研澤疊圓體'>亂叫</fon</td>
+　</tr>
+</table>
+
+</body>
+</html>
