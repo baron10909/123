@@ -22,10 +22,10 @@
         教育程度: <select name="Amount">
                 <option value="1" selected>國小或以下</option>  
                 <option value="2" selected>國中</option> 
-                <option value="2" selected>高中職</option> 
-                <option value="2" selected>專科</option> 
-                <option value="2" selected>大學</option> 
-                <option value="2" selected>研究所或以上</option>
+                <option value="3" selected>高中職</option> 
+                <option value="4" selected>專科</option> 
+                <option value="5" selected>大學</option> 
+                <option value="6" selected>研究所或以上</option>
                 </select><br>
         <br>
         長期用藥:<input type="radio" required="required" name="Method"               value="yes">是
@@ -37,8 +37,23 @@
         食物過敏:<input type="radio" required="required" name="Method"               value="yes">有
         <input type="radio" required="required" name="Method" value="no">否<br>
         <br>
+        身心疾病: <select name="disease">
+                <option value="1" selected>自閉症</option>  
+                <option value="2" selected>智能不足</option> 
+                <option value="3" selected>精神分裂</option> 
+                <option value="4" selected>憂鬱症</option> 
+                <option value="5" selected>焦慮症</option>                 
+                </select><br>
+        <br>
+        吸菸狀態:<input type="radio" required="required" name="Method" value="a">不吸菸
+        
+        <input type="radio" required="required" name="Method" value="b">朋友敬菸或應酬才吸菸
+        <input type="radio" required="required" name="Method" value="c">平均一天約吸一包菸(或以下)<br>
+        <input type="radio" required="required" name="Method" value="d">平均一天吸一包菸以上<br>
+        <br>
         <button type="submit" value="sssss" style="height: 29px; width: 103px">送出               </button>
 
         </form>
  </body>
 </html>
+
