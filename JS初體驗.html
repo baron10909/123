@@ -7,7 +7,7 @@
 
         function Button1_onclick() {
             var a;
-            a = document.getElementById("text1").value;
+            a = document.getElementById("id="Text1"").value;
             if ( a=="") alert("姓名不可空白!");
         }
     </script>
@@ -17,14 +17,14 @@
     <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"     name="form1" >  
     
         <br>
-        姓名:<input type="text1"  name="name" size="8"><br>
+        姓名:<input id="Text1" type="text"  name="name" size="8"><br>
         <br>
-        電話:<input type="text2"  name="TEL" size="20"><br>
+        電話:<input id="Text2" type="text"  name="TEL" size="20"><br>
         <br>
-        生日:<input type="text3"  name="num" size="20"><br>
+        生日:<input id="Text3" type="text"  name="num" size="20"><br>
         <br>
-        性別:<input type="radio" required="required" name="Method"               value="boy">男
-        <input type="radio" required="required" name="Method"               value="girl">女<br>
+        性別:<input id="Radiobutton1" type="radio" required="required" name="Method"               value="boy">男
+        <input id="Radiobutton2" type="radio" required="required" name="Method"               value="girl">女<br>
         <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LH_5P47kO79xBWB50Dp4opEGKSOb4gi5DetlmcBdYbhnOOcgNA"><br>
         <br>
         教育程度: <select name="Amount">
@@ -36,14 +36,14 @@
                 <option value="6" selected>研究所或以上</option>
                 </select><br>
         <br>
-        長期用藥:<input type="radio" required="required" name="Method"               value="yes">是
-        <input type="radio" required="required" name="Method" value="no">否<br>
+        長期用藥:<input id="Radiobutton3" type="radio" required="required" name="Method"               value="yes">是
+        <input id="Radiobutton4" type="radio" required="required" name="Method" value="no">否<br>
         <br>
-        藥物過敏:<input type="radio" required="required" name="Method"               value="yes">有
-        <input type="radio" required="required" name="Method" value="no">否<br>
+        藥物過敏:<input id="Radiobutton5" type="radio" required="required" name="Method"               value="yes">有
+        <input id="Radiobutton6" type="radio" required="required" name="Method" value="no">否<br>
         <br>
-        食物過敏:<input type="radio" required="required" name="Method"               value="yes">有
-        <input type="radio" required="required" name="Method" value="no">否<br>
+        食物過敏:<input id="Radiobutton7" type="radio" required="required" name="Method"               value="yes">有
+        <input id="Radiobutton8" type="radio" required="required" name="Method" value="no">否<br>
         <br>
         身心疾病: <select name="disease">
                 <option value="1" selected>自閉症</option>  
@@ -53,13 +53,13 @@
                 <option value="5" selected>焦慮症</option>                 
                 </select><br>
         <br>
-        吸菸狀態:<input type="radio" required="required" name="Method" value="a">不吸菸
+        吸菸狀態:<input id="Radiobutton9" type="radio" required="required" name="Method" value="a">不吸菸
         
-        <input type="radio" required="required" name="Method" value="b">朋友敬菸或應酬才吸菸
-        <input type="radio" required="required" name="Method" value="c">平均一天約吸一包菸(或以下)<br>
-        <input type="radio" required="required" name="Method" value="d">平均一天吸一包菸以上<br>
+        <input id="Radiobutton10" type="radio" required="required" name="Method" value="b">朋友敬菸或應酬才吸菸
+        <input id="Radiobutton11" type="radio" required="required" name="Method" value="c">平均一天約吸一包菸(或以下)<br>
+        <input id="Radiobutton12" type="radio" required="required" name="Method" value="d">平均一天吸一包菸以上<br>
         <br>
-        <button type="submit" value="sssss" style="height: 29px; width: 103px">送出               </button>
+        <button id="Button1" type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
 
         </form>
  </body>
