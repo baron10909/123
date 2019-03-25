@@ -3,17 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>JS 初體驗</title>
+    <script language="javascript" type="text/javascript">
+
+        function Button1_onclick() {
+            var a;
+            a = document.getElementById("Text1").value;
+            if ( a=="") alert("姓名不可空白!");
+        }
+    </script>
 </head>
 <body background="https://truth.bahamut.com.tw/s01/201611/5658810a80cc2ff29a8b3dd2aa7717aa.JPG">
     <h2>個人健康資料</h2>
     <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"     name="form1" >  
     
         <br>
-        姓名:<input type="text"  name="name" size="8"><br>
+        姓名:<input type="text1"  name="name" size="8"><br>
         <br>
-        電話:<input type="text"  name="TEL" size="20"><br>
+        電話:<input type="text2"  name="TEL" size="20"><br>
         <br>
-        生日:<input type="text"  name="num" size="20"><br>
+        生日:<input type="text3"  name="num" size="20"><br>
         <br>
         性別:<input type="radio" required="required" name="Method"               value="boy">男
         <input type="radio" required="required" name="Method"               value="girl">女<br>
