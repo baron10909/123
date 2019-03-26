@@ -1,66 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>JS 初體驗</title>
-    <script language="javascript" type="text/javascript">
 
-        function Button1_onclick() {
-            var a;
-            a = document.getElementById("id="Text1"").value;
-            if ( a=="") alert("姓名不可空白!");
-        }
-    </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
 </head>
-<body background="https://truth.bahamut.com.tw/s01/201611/5658810a80cc2ff29a8b3dd2aa7717aa.JPG">
-    <h2>個人健康資料</h2>
-    <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"     name="form1" >  
-    
-        <br>
-        姓名:<input id="Text1" type="text"  name="name" size="8"><br>
-        <br>
-        電話:<input id="Text2" type="text"  name="TEL" size="20"><br>
-        <br>
-        生日:<input id="Text3" type="text"  name="num" size="20"><br>
-        <br>
-        性別:<input type="radio" required="required" name="Method"               value="boy">男
-        <input type="radio" required="required" name="Method"               value="girl">女<br>
-        <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LH_5P47kO79xBWB50Dp4opEGKSOb4gi5DetlmcBdYbhnOOcgNA"><br>
-        <br>
-        教育程度: <select name="Amount">
-                <option value="1" selected>國小或以下</option>  
-                <option value="2" selected>國中</option> 
-                <option value="3" selected>高中職</option> 
-                <option value="4" selected>專科</option> 
-                <option value="5" selected>大學</option> 
-                <option value="6" selected>研究所或以上</option>
-                </select><br>
-        <br>
-        長期用藥:<input type="radio" required="required" name="Method"               value="yes">是
-        <input type="radio" required="required" name="Method" value="no">否<br>
-        <br>
-        藥物過敏:<input type="radio" required="required" name="Method"               value="yes">有
-        <input type="radio" required="required" name="Method" value="no">否<br>
-        <br>
-        食物過敏:<input type="radio" required="required" name="Method"               value="yes">有
-        <input type="radio" required="required" name="Method" value="no">否<br>
-        <br>
-        身心疾病: <select name="disease">
-                <option value="1" selected>自閉症</option>  
-                <option value="2" selected>智能不足</option> 
-                <option value="3" selected>精神分裂</option> 
-                <option value="4" selected>憂鬱症</option> 
-                <option value="5" selected>焦慮症</option>                 
-                </select><br>
-        <br>
-        吸菸狀態:<input type="radio" required="required" name="Method" value="a">不吸菸
-        
-        <input type="radio" required="required" name="Method" value="b">朋友敬菸或應酬才吸菸
-        <input type="radio" required="required" name="Method" value="c">平均一天約吸一包菸(或以下)<br>
-        <input type="radio" required="required" name="Method" value="d">平均一天吸一包菸以上<br>
-        <br>
-        <button id="Button1" type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
+<body style="background-image:url(https://truth.bahamut.com.tw/s01/201611/5658810a80cc2ff29a8b3dd2aa7717aa.JPG);width:100%;height:100%;" >
+    <form id="a" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="reg"><br>
+        <font face="華康海報體W9">
+姓名：<input id="nId" name="name"    type="text" size="16" /><br>
+<br>
+電話：<input id="tId" name="tellphone" type="text" size="16" /><br>
+<br>
+生日：
+<input id="yId" name="year" type="text" size="5" />
+年
+<select id="mId" name="month">
+       <option value="00">&lt;請選取&gt;</option>
+       <option value="01">01</option>
+       <option value="02">02</option>
+       <option value="03">03</option>
+       <option value="04">04</option>
+       <option value="05">05</option>
+       <option value="06">06</option>
+       <option value="07">07</option>
+       <option value="08">08</option>
+       <option value="09">09</option>
+       <option value="10">10</option>
+       <option value="11">11</option>
+       <option value="12">12</option>
+</select>
 
-        </form>
- </body>
+月
+<select id="dId" name="day">
+       <option value="00">&lt;請選取&gt;</option>
+       <option value="01">01</option>
+       <option value="02">02</option>
+       <option value="03">03</option>
+       <option value="04">04</option>
+       <option value="05">05</option>
+       <option value="06">06</option>
+       <option value="07">07</option>
+       <option value="08">08</option>
+       <option value="09">09</option>
+       <option value="10">10</option>
+       <option value="11">11</option>
+       <option value="12">12</option>
+       <option value="13">13</option>
+       <option value="14">14</option>
+       <option value="15">15</option>
+       <option value="16">16</option>
+       <option value="17">17</option>
+       <option value="18">18</option>
+       <option value="19">19</option>
+       <option value="20">20</option>
+       <option value="21">21</option>
+       <option value="22">22</option>
+       <option value="23">23</option>
+       <option value="24">24</option>
+       <option value="25">25</option>
+       <option value="26">26</option>
+       <option value="27">27</option>
+       <option value="28">28</option>
+       <option value="29">29</option>
+       <option value="30">30</option>
+       <option value="31">31</option>
+</select>日<br>
+<br>
+性別：
+<input id="g" type="radio" name="gender" value="男" />男  &nbsp;&nbsp;&nbsp; 
+<input id="g1" type="radio" name="gender" value="女" />女 <br><br>
+
+<script>
+function check(){
+
+            if(reg.name.value == ""){
+                    alert("未輸入姓名!");
+            }
+	    else if(reg.tellphone.value == ""){
+                    alert("未輸入電話!");
+            }
+	    else if (isNaN(reg.tellphone.value)){
+		alert("電話請輸入數字!");
+	    }
+            else if(reg.year.value == "" || reg.month.value == "00" || reg.day.value == "00"){
+                    alert("未輸入完整生日日期!");
+            }
+            else if(!reg.gender[0].checked && !reg.gender[1].checked){
+                     alert("未選擇性別!");
+            }
+            else reg.submit();
+     }
+</script>
+<input type="button" value="確認" onclick="check()" /> &nbsp;&nbsp;&nbsp;
+<input type="reset" value="清除" /><br/><br/>
+
+<script type="text/javascript">
+    function Input(){
+	var ntext = document.getElementById("nId");
+	ntext.value = "Chalmers";
+	var ttext = document.getElementById("tId");
+	ttext.value = "12345678";
+	var ytext = document.getElementById("yId");
+	ytext.value = "1974";
+	var mtext = document.getElementById("mId");
+	mtext.value = "12";
+	var dtext = document.getElementById("dId");
+	dtext.value = "25";
+	document.getElementById("g").checked = true;
+	   }
+  </script>
+<button onclick= "Input()"><font face="華康海報體W9">輸入資料</font></button>
+
+<script type="text/javascript">
+     function Show(){
+	alert('姓名:'+reg.name.value);
+	alert('電話:'+reg.tellphone.value);
+	alert('生日:'+reg.year.value+'年'+reg.month.value+'月'+reg.day.value+'日');
+	var radionum = document.getElementById("a").gender;
+	for(var i=0;i<radionum.length;i++){
+		if(radionum[i].checked){gender = radionum[i].value}
+	}
+	alert('性別:'+gender); 
+	   }
+</script>
+<button onclick= "Show()"><font face="華康海報體W9">顯示資料</font></button>
+</font>
+</form>
+</body>
 </html>
