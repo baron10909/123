@@ -2,20 +2,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>健康小站</title>
+    <title>個人健康網站</title>
     <style>
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 100%;
         }
-
         td, th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
         }
-
         tr:nth-child(even) {
             background-color: #dddddd;
         }
@@ -24,12 +22,11 @@
 </head>
 <body style="background-image: url(https://www.crazyppt.com/wp-content/uploads/2018/10/1-1PH1120331-1200x628.jpg); width: 100%; height: 100%;">
     <form id="a" action="http://203.64.84.113/x/RQ_RS.aspx" method="post" name="reg">
-        <br />
-        <font face="華康海報體W9">
-        <font color="blue"><h2>健康四步驟</h2>
+        <br />  
+        <h2>個人身心疾病</h2>
         <ol id="health"></ol>
         <script>
-            var things = ["觀察身體狀況", "制定運動計畫", "規劃飲食", "調整工作生活步調"];
+            var things = ["自閉症", "智能不足", "精神分裂", "憂鬱症"];
             var text = "", i;
             for (i = 0; i < things.length; i++) {
                 text += "<li>";
@@ -39,146 +36,83 @@
             document.getElementById("health").innerHTML = text;
         </script>
         <select onchange="isSelected(this.value);" id="Hth"> 
-        <option value="1" style="font-family:華康海報體W9;">觀察身體狀況</option> 
-        <option value="2" style="font-family:華康海報體W9;">制定運動計畫</option> 
-        <option value="3" style="font-family:華康海報體W9;">規劃飲食</option> 
-        <option value="4" style="font-family:華康海報體W9;">調整工作生活步調</option> 
+        <option value="1" style="font-family:華康海報體W9;">自閉症</option> 
+        <option value="2" style="font-family:華康海報體W9;">智能不足</option> 
+        <option value="3" style="font-family:華康海報體W9;">精神分裂</option> 
+        <option value="4" style="font-family:華康海報體W9;">憂鬱症</option> 
         </select>
         <script>
             function isSelected(value) {
                 var HName;
                 var Hth = document.getElementById("Hth");
-                //獲取選中的名稱 
                 for (i = 0; i < Hth.length; i++) {
                     if (Hth[i].selected == true) {
                         HName = Hth[i].innerText;
-                        alert("健康步驟之一:" + HName);
+                        alert("您的身心疾病:" + HName);
                     }
                 }
             }
-        </script>
-            <hr color="blue" size="10" />
-        </font>
-        <br/><br/>
-        <font color="green">
-        <h2>BMI小工具</h2>
-        <div>
-            身高:<input id="h" name="high" type="text" /><br />
-            體重:<input id="w" name="weight" type="text" /><br />
-        </div>
-        <script>
-            function check() {
-
-                if (reg.high.value == "") {
-                    alert("未輸入身高!");
-                }
-                else if (reg.weight.value == "") {
-                    alert("未輸入體重!");
-                }
-                if (isNaN(reg.high.value) || reg.high.value < 0 || reg.high.value > 200) {
-                    alert("身高請輸入正確數字!");
-                }
-                else if (isNaN(reg.weight.value) || reg.weight.value < 0 || reg.weight.value > 200) {
-                    alert("體重請輸入正確數字!");
-                }
-                if (reg.high.value > 0 && reg.high.value < 200 && reg.weight.value > 0 && reg.weight.value < 200) {
-                    var BMI;
-                    BMI = (reg.weight.value) / ((reg.high.value) * (reg.high.value) * 0.0001);
-                    if (BMI < 18.5) {
-                        alert("BMI:" + BMI + "您的體重過輕!");
-                    }
-                    else if (BMI >= 18.5 && BMI < 24) {
-                        alert("BMI:" + BMI + "   " + "您的體重位於健康體位!");
-                    }
-                    else if (BMI >= 24 && BMI < 27) { alert("BMI:" + BMI + "   " + "您的體重過重!"); }
-                    else if (BMI >= 27 && BMI < 30) { alert("BMI:" + BMI + "   " + "您的體重輕度肥胖!"); }
-                    else if (BMI >= 30 && BMI < 35) { alert("BMI:" + BMI + "   " + "您的體重中度肥胖!"); }
-                    else { alert("BMI:" + BMI + "   " + "您的體重重度肥胖!"); }
-                }
-            }
-        </script><br/>
-        <input type="button" value="送出" onclick="check()" style="font-family:華康海報體W9;"/><br/>
-        <hr color="green" size="10" />
-        </font>
-        <font color="red"><br/>
-        <h2>個人運動檢視表</h2>
+        </script>     
+        <br/>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LH_5P47kO79xBWB50Dp4opEGKSOb4gi5DetlmcBdYbhnOOcgNA">
+        <h2>個人健康調查</h2>
 <table>
     <tr>
     <td>
-       <font face="華康海報體W9">
-        喜歡參與運動 : 
-        <input type="checkbox" name="q" value="喜歡參與運動"/>是
-        <input type="checkbox" name="q" value="不喜歡參與運動"/>否
+        一周內是否會運動 : 
+        <input type="checkbox" name="q" value="會"/>是
+        <input type="checkbox" name="q" value="不會"/>否
         </font>
     </td>
   </tr>
   <tr>
     <th>
-        <font face="華康海報體W9">
-        每週運動次數 : 
-        <input type="checkbox" name="q1" value="運動次數:小於三次" />小於三次
-        <input type="checkbox" name="q1" value="運動次數:剛剛好三次"/>剛剛好三次
-        <input type="checkbox" name="q1" value="運動次數:不只三次"/>不只三次
+        是否長期用藥 : 
+        <input type="checkbox" name="q1" value="有" />是
+        <input type="checkbox" name="q1" value="沒有"/>否
         </font>
     </th>
   </tr>
   <tr>
     <td>
-        <font face="華康海報體W9">
-        每次運動強度 : 
-        <input type="checkbox" name="q2" value="運動強度:平緩"/>平緩
-        <input type="checkbox" name="q2" value="運動強度:適量"/>適量
-        <input type="checkbox" name="q2" value="運動強度:激烈"/>激烈
+        是否藥物過敏 : 
+        <input type="checkbox" name="q2" value="是"/>是
+        <input type="checkbox" name="q2" value="否"/>否
         </font>
     </td>
   </tr>
   <tr>
     <td>
-       <font face="華康海報體W9">
-        每次運動時間 : 
-        <input type="checkbox" name="q3" value="運動時間:小於30分鐘"/>小於30分鐘
-        <input type="checkbox" name="q3" value="運動時間:剛剛好30分鐘"/>剛剛好30分鐘
-        <input type="checkbox" name="q3" value="運動時間:不只30分鐘"/>不只30分鐘
+        是否食物過敏 : 
+        <input type="checkbox" name="q3" value="是"/>是
+        <input type="checkbox" name="q3" value="否"/>否
         </font>
     </td>
   </tr>
   <tr>
     <td>
-       <font face="華康海報體W9">
-        興趣運動項目 : 
-        <input type="checkbox" name="q4" value="興趣項目:慢跑"/>慢跑/快走
-        <input type="checkbox" name="q4" value="興趣項目:球類"/>球類
-        <input type="checkbox" name="q4" value="興趣項目:瑜珈"/>瑜珈
-        <input type="checkbox" name="q4" value="興趣項目:健身"/>健身
+        吸菸狀態 : 
+        <input type="checkbox" name="q4" value="不吸菸"/>不吸菸
+        <input type="checkbox" name="q4" value="一天一包菸(以下)"/>一天一包菸(以下)
+        <input type="checkbox" name="q4" value="一天一包菸以上"/>一天一包菸以上
         </font>
     </td>
   </tr>
   <tr>
     <td>
-        <font face="華康海報體W9">
-        生活交通方式 : 
-        <input type="checkbox" name="q5" value="交通方式:走路"/>走路
-        <input type="checkbox" name="q5" value="交通方式:腳踏車"/>腳踏車
-        <input type="checkbox" name="q5" value="交通方式:騎車"/>騎車
-        <input type="checkbox" name="q5" value="交通方式:開車"/>開車
-        </font>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <font face="華康海報體W9">
-        運動主要原因 : 
-        <input type="checkbox" name="q6" value="運動原因:強健身體"/>強健身體
-        <input type="checkbox" name="q6" value="運動原因:個人興趣"/>個人興趣
-        <input type="checkbox" name="q6" value="運動原因:消遣娛樂"/>消遣娛樂
-        <input type="checkbox" name="q6" value="運動原因:提身體育技能"/>提身體育技能
-        <input type="checkbox" name="q6" value="運動原因:隨興"/>隨興
+        教育程度 : 
+        <input type="checkbox" name="q5" value="國小"/>國小
+        <input type="checkbox" name="q5" value="國中"/>國中
+        <input type="checkbox" name="q5" value="高中職"/>高中職
+        <input type="checkbox" name="q5" value="專科"/>專科
+        <input type="checkbox" name="q5" value="大學"/>大學
+        <input type="checkbox" name="q5" value="研究所"/>研究所
         </font>
     </td>
   </tr>
 </table><br/>
-            <input type="button" name="ok" id="ok" value="確定" style="font-family:華康海報體W9;"/>
-            <hr color="red" size="10" />
+            <input type="button" name="ok" id="ok" value="送出" style="font-family:華康海報體W9;"/>        
         </font>
             <ul id="Answers"></ul>
     <script language="Javascript">
@@ -225,15 +159,8 @@
                 if (obj[i5].checked) {
                     selected5.push(obj[i5].value);
                 }
-            }
-            var obj = document.getElementsByName("q6");
-            var selected6 = [];
-            for (var i6 = 0; i6 < obj.length; i6++) {
-                if (obj[i6].checked) {
-                    selected6.push(obj[i6].value);
-                }
-            }
-            var answers = [selected.join(), selected1.join(), selected2.join(), selected3.join(), selected4.join(), selected5.join(), selected6.join()];
+            }            
+            var answers = [selected.join(), selected1.join(), selected2.join(), selected3.join(), selected4.join(), selected5.join()];
             var text1 = "", i;
             for (i = 0; i < answers.length; i++) {
                 text1 += "<li>";
